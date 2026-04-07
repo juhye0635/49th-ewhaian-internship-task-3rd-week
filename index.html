@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이화이언 html 페이지 구현 과제</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,11 +24,12 @@
     
     <main>
         <h1>자주 묻는 질문</h1>
-        <section>
-            <button type="button">운영진 지원 관련 질문</button>
-            <button type="button">운영진 활동 관련 질문</button>
-            <button type="button">기타</button>
+        <section id="category-buttons">
+            <button type="button" class="tab-btn" data-category="recruitment">운영진 지원 관련 질문</button>
+            <button type="button" class="tab-btn" data-category="activity">운영진 활동 관련 질문</button>
+            <button type="button" class="tab-btn" data-category="etc">기타</button>
         </section>
+        <section id="faq-list"></section>
         <section>
             <article>
                 <h3>Q. 운영진 모집에 있어 우대하는 학과가 있나요?</h3>
